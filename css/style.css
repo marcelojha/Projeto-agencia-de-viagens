@@ -1,0 +1,82 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-size: 18px;
+	box-sizing: border-box;
+}
+
+html,body{
+	height: 100%;
+}
+
+header{
+	background-image: url('../imagens/beach3.jpg');
+	width: 100%;
+	height: 600px;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+}
+div.cabecalho{
+	width: 50%;
+	min-width: 400px;
+	background-color: rgb(245,230,66);
+	height:auto;
+	position: absolute;
+	top: 470px;
+	opacity: 0.7;
+	padding: 5px 16px;
+
+}
+div.cabecalho h1,h2{
+
+	width: 100%;
+	color: #000000;
+	height: auto;
+	font-size: 40px;
+}
+
+div.cabecalho:hover{
+	background-color: rgb(245,194,66);
+}
+
+div.container{
+	margin: 50px auto;
+}
+div.container-img{
+	width: 50%;
+	display: inline-block;
+	margin-right:-5px;
+	padding: 20px 45px;
+	border-top: 2px solid #ffffff;
+	vertical-align: top;
+
+}
+
+div.container-img img{
+	width: 100%;
+	border-top: 6px solid #ffc107;
+
+}
+div.container-img h3{
+	font-weight: 400;
+	font-size: 40px;
+}
+
+
+@media screen and (max-width: 800px){
+	div.container-img{
+		width: 100%;
+
+	}
+
+	header{
+		height: 500px;
+	}
+	div.cabecalho{
+		position: absolute;
+		top:50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+	}
+}
